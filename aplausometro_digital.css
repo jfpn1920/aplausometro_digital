@@ -1,0 +1,202 @@
+/*--|estilo_aplausometro_digital|--*/
+/* Restablecemos los valores predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Configuración general de la página */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    padding: 30px 15px;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+/* Contenedor principal del proyecto */
+.contenedor_aplausometro_digital {
+    width: 100%;
+    max-width: 570px;
+    margin: 0 auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(15, 23, 42, 0.08);
+}
+/* Encabezado del aplausómetro */
+.encabezado_aplausometro_digital {
+    text-align: center;
+    margin-bottom: 25px;
+}
+/* Icono principal del proyecto */
+.icono_aplausometro_digital {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fef3c7;
+    border-radius: 16px;
+    font-size: 28px;
+}
+/* Título principal */
+.encabezado_aplausometro_digital h1 {
+    margin-bottom: 9px;
+    color: #172554;
+    font-size: 27px;
+}
+/* Descripción del proyecto */
+.encabezado_aplausometro_digital p {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.6;
+}
+/* Panel principal del contador */
+.panel_contador_aplausometro {
+    padding: 30px 20px;
+    background: #eff6ff;
+    border: 1px solid #dbeafe;
+    border-radius: 16px;
+    text-align: center;
+}
+/* Etiqueta superior del contador */
+.etiqueta_aplausometro {
+    color: #64748b;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+/* Número principal de aplausos */
+.contador_aplausometro {
+    margin: 12px 0;
+    color: #1d4ed8;
+    font-size: 58px;
+    font-weight: bold;
+    line-height: 1;
+    transition: transform 0.15s;
+}
+/* Efecto de aumento del contador */
+.contador_aplausometro.animar {
+    transform: scale(1.12);
+}
+/* Mensaje debajo del contador */
+.mensaje_aplausometro {
+    color: #475569;
+    font-size: 14px;
+    line-height: 1.5;
+}
+/* Sección de la barra de progreso */
+.seccion_progreso_aplausometro {
+    margin: 24px 0;
+}
+/* Información superior de la barra */
+.informacion_progreso_aplausometro {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    color: #475569;
+    font-size: 13px;
+    font-weight: bold;
+}
+/* Fondo de la barra */
+.barra_aplausometro {
+    width: 100%;
+    height: 12px;
+    overflow: hidden;
+    background: #e2e8f0;
+    border-radius: 20px;
+}
+/* Parte que aumenta de la barra */
+.progreso_aplausometro {
+    width: 0%;
+    height: 100%;
+    background: #2563eb;
+    border-radius: inherit;
+    transition: width 0.25s ease;
+}
+/* Sección del botón principal */
+.seccion_boton_aplausometro {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 22px;
+}
+/* Botón para registrar un aplauso */
+.boton_aplaudir_aplausometro {
+    width: 100%;
+    min-height: 58px;
+    border: none;
+    border-radius: 12px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+}
+/* Separación entre icono y texto */
+.boton_aplaudir_aplausometro span {
+    margin-right: 8px;
+    font-size: 20px;
+}
+/* Efecto al pasar el cursor */
+.boton_aplaudir_aplausometro:hover {
+    background: #1d4ed8;
+}
+/* Efecto al presionar el botón */
+.boton_aplaudir_aplausometro:active {
+    transform: scale(0.97);
+}
+/* Organización de los datos inferiores */
+.informacion_aplausometro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+/* Tarjetas de información */
+.dato_aplausometro {
+    padding: 15px 10px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    text-align: center;
+}
+/* Valores numéricos de las tarjetas */
+.dato_aplausometro strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #1e3a8a;
+    font-size: 20px;
+}
+/* Texto descriptivo de las tarjetas */
+.dato_aplausometro span {
+    color: #64748b;
+    font-size: 11px;
+}
+/* Botón de reinicio */
+.boton_reiniciar_aplausometro {
+    width: 100%;
+    min-height: 44px;
+    border: none;
+    border-radius: 9px;
+    background: #e2e8f0;
+    color: #334155;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+/* Efecto del botón de reinicio */
+.boton_reiniciar_aplausometro:hover {
+    background: #cbd5e1;
+}
+/* Mensaje informativo */
+.aviso_aplausometro {
+    min-height: 20px;
+    margin-top: 15px;
+    color: #15803d;
+    font-size: 13px;
+    text-align: center;
+    line-height: 1.5;
+}

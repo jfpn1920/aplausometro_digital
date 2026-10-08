@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aplausometro digital</title>
+    <link rel="stylesheet" href="aplausometro_digital.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="aplausometro_digital.js" defer></script>
+</head>
+<body>
+    <!----------------------------------------->
+    <!--|estructuracion_aplausometro_digital|-->
+    <!----------------------------------------->
+    <main class="contenedor_aplausometro_digital">
+        <!-- Encabezado informativo del proyecto -->
+        <header class="encabezado_aplausometro_digital">
+            <div class="icono_aplausometro_digital">👏</div>
+            <h1>Aplausómetro Digital</h1>
+            <p>Haz clic y demuestra tu nivel de aplausos.</p>
+        </header>
+        <!-- Panel donde se muestra el contador -->
+        <section class="panel_contador_aplausometro">
+            <span class="etiqueta_aplausometro">
+                APLAUSOS RECIBIDOS
+            </span>
+            <!-- Número que aumenta con cada clic -->
+            <div id="contador_aplausometro"
+                class="contador_aplausometro">
+                0
+            </div>
+            <!-- Mensaje que describe el nivel de aplausos -->
+            <p id="mensaje_aplausometro"
+                class="mensaje_aplausometro">
+                ¡Todavía puedes comenzar!
+            </p>
+        </section>
+        <!-- Barra visual de progreso de aplausos -->
+        <section class="seccion_progreso_aplausometro">
+            <div class="informacion_progreso_aplausometro">
+                <span>Nivel de aplausos</span>
+                <span id="porcentaje_aplausometro">0%</span>
+            </div>
+            <!-- Contenedor de la barra -->
+            <div class="barra_aplausometro">
+                <div id="progreso_aplausometro"
+                    class="progreso_aplausometro">
+                </div>
+            </div>
+        </section>
+        <!-- Botón principal para aumentar el contador -->
+        <section class="seccion_boton_aplausometro">
+            <button type="button"
+                    id="boton_aplaudir_aplausometro"
+                    class="boton_aplaudir_aplausometro">
+                <span>👏</span>
+                Aplaudir
+            </button>
+        </section>
+        <!-- Información sobre los clics realizados -->
+        <section class="informacion_aplausometro">
+            <div class="dato_aplausometro">
+                <strong id="ultimo_aplauso_aplausometro">0</strong>
+                <span>Último incremento</span>
+            </div>
+            <div class="dato_aplausometro">
+                <strong id="total_aplausos_aplausometro">0</strong>
+                <span>Total acumulado</span>
+            </div>
+        </section>
+        <!-- Botón para restablecer el contador -->
+        <button type="button"
+                id="boton_reiniciar_aplausometro"
+                class="boton_reiniciar_aplausometro">
+            Reiniciar contador
+        </button>
+        <!-- Mensaje informativo del sistema -->
+        <p id="aviso_aplausometro"
+            class="aviso_aplausometro"
+            role="status"
+            aria-live="polite">
+        </p>
+    </main>
+</body>
+</html>
