@@ -1,0 +1,1 @@
+# aplausometro_digital
